@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vtuber Search</title>
+    <link rel="stylesheet" href="./responsivo.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <a href="" class="logo">Vtubers</a>
+
+        <div class="nav">
+            <a href="./index.html">Home</a>
+            <a href="./vtubers.html">Vtubers</a>
+            <a href="#">About</a>
+        </div>
+
+        <div class="nav-responsive">
+            <a href="./index.html">Home</a>
+            <a href="./vtubers.html">Vtubers</a>
+            <a href="#">About</a>
+        </div>
+
+        <div class="menu-hamburguer">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </header>
+
+    <section class="filtro cor-fundo">
+        <h1>Achar Vtuber</h1>
+
+    <form id="filter-form">
+
+        <!-- Filtro por Tags -->
+        <label for="tag-filter">Filtrar por Tag:</label>
+        <select id="tag-filter">
+            <option value="">Todas</option>
+            <option value="just-chatting">Just Chatting</option>
+            <option value="gameplay">Gameplay</option>
+            <option value="react">React</option>
+            <option value="asmr">ASMR</option>
+            <option value="musica">Música</option>
+        </select>
+
+        <!-- Filtro por Horário -->
+        <label for="time-filter">Filtrar por Horário:</label>
+        <select id="time-filter">
+            <option value="">Todos</option>
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+            <option value="madrugada">Madrugada</option>
+        </select>
+
+        <!-- Filtro por Plataforma de Streaming -->
+        <label for="plat-filter">Filtrar por Plataforma</label>
+        <select id="plat-filter">
+            <option value="">Todos</option>
+            <option value="youtube">Youtube</option>
+            <option value="twitch">Twitch</option>
+            <option value="kick">Kick</option>
+        </select>
+
+        <button class="submit" type="submit">Buscar</button>
+    </form>
+
+    <!-- Lista de Itens -->
+    <div class="items">
+        <div class="item" data-tags="asmr, gameplay, just-chatting, react" data-time="noite" data-plat="twitch">
+            <img class="item-img" src="./img/nyhzumi/nyhzumi1.png" alt="">
+            <h3>Nyhzumi</h3>
+            <p><span>Tags:</span> Asmr, Just Chatting, Gameplay, React</p>
+            <p><span>Horário:</span> Noite</p>
+            <p><span>Plataforma:</span> Twitch</p>
+        </div>
+
+        <div class="item" data-tags="just-chatting, gameplay, react" data-time="noite" data-plat="twitch">
+            <img class="item-img" src="./img/akariinyan/akariinyan1.png" alt="">
+            <h3>Akariinyan</h3>
+            <p><span>Tags:</span> Just Chatting, Gameplay, React</p>
+            <p><span>Horário:</span> Noite</p>
+            <p><span>Plataforma:</span> Twitch</p>
+        </div>
+
+        <div class="item" data-tags="just-chatting, gameplay" data-time="noite, madrugada" data-plat="youtube">
+            <img class="item-img" src="./img/gigimurin/gigi1.png" alt="">
+            <h3>Gigi Murin</h3>
+            <p><span>Tags:</span> Just Chatting, Gameplay</p>
+            <p><span>Horário:</span> Noite, Madrugada</p>
+            <p><span>Plataforma:</span> Youtube</p>
+        </div>
+
+        <div class="item" data-tags="gameplay, just-chatting, react" data-time="tarde" data-plat="twitch, youtube">
+            <img class="item-img" src="./img/mayuyu/mayuyu1.png" alt="">
+            <h3>Mayuyu</h3>
+            <p><span>Tags:</span> Just Chatting, Gameplay, React</p>
+            <p><span>Horário:</span> Tarde</p>
+            <p><span>Plataforma:</span> Twitch, Youtube</p>
+        </div>
+
+        <div class="item" data-tags="gameplay, just-chatting" data-time="tarde" data-plat="twitch, youtube">
+            <img class="item-img" src="./img/vamppychan/vamppychan1.png" alt="">
+            <h3>VamppyChan</h3>
+            <p><span>Tags:</span>Just Chatting, Gameplay</p>
+            <p><span>Horário:</span> Tarde</p>
+            <p><span>Plataforma:</span> Twitch, Youtube</p>
+        </div>
+
+        <div class="item" data-tags="gameplay, just-chatting" data-time="tarde" data-plat="twitch">
+            <img class="item-img" src="./img/Inaishi/Inaishi1.png" alt="">
+            <h3>Inaishi</h3>
+            <p><span>Tags:</span>Just Chatting, Gameplay</p>
+            <p><span>Horário:</span> Tarde</p>
+            <p><span>Plataforma:</span> Twitch</p>
+        </div>
+
+        <div class="item" data-tags="asmr, gameplay, just-chatting, react, musica" data-time="noite, madrugada" data-plat="youtube">
+            <img class="item-img" src="./img/maidmint/maidmint1.png" alt="">
+            <h3>Maind Mint</h3>
+            <p><span>Tags:</span> Asmr, Just Chatting, Gameplay, React, Música</p>
+            <p><span>Horário:</span> Noite, Madrugada</p>
+            <p><span>Plataforma:</span> Youtube</p>
+        </div>
+
+        <div class="item" data-tags="gameplay, just-chatting, musica" data-time="noite, madrugada" data-plat="youtube, twitch">
+            <img class="item-img" src="./img/dokibird/dokibird1.png" alt="">
+            <h3>Dokibird</h3>
+            <p><span>Tags:</span> Just Chatting, Gameplay, Música</p>
+            <p><span>Horário:</span> Noite, Madrugada</p>
+            <p><span>Plataforma:</span> Youtube, Twitch</p>
+        </div>
+
+        <div class="item" data-tags="gameplay, just-chatting" data-time="tarde" data-plat="twitch">
+            <img class="item-img" src="./img/calamarei/Calamarei1.png" alt="">
+            <h3>Calamarei</h3>
+            <p><span>Tags:</span> Just Chatting, Gameplay</p>
+            <p><span>Horário:</span> Tarde</p>
+            <p><span>Plataforma:</span> Twitch</p>
+        </div>
+
+        <div class="item" data-tags="gameplay, just-chatting, react" data-time="manha" data-plat="twitch">
+            <img class="item-img" src="./img/milkymew/milkymew1.png" alt="">
+            <h3>Milky Mew</h3>
+            <p><span>Tags:</span> Just Chatting, Gameplay, React</p>
+            <p><span>Horário:</span> Manhã</p>
+            <p><span>Plataforma:</span> Twitch</p>
+        </div>
+        
+        <div class="item" data-tags="asmr, gameplay, just-chatting, react" data-time="noite, tarde" data-plat="twitch">
+            <img class="item-img" src="./img/squchan/squchan1.png" alt="">
+            <h3>SquChan</h3>
+            <p><span>Tags:</span> Asmr, Just Chatting, Gameplay, React</p>
+            <p><span>Horário:</span> Noite, Tarde</p>
+            <p><span>Plataforma:</span> Twitch</p>
+        </div>
+
+        <div class="item" data-tags="asmr, gameplay, just-chatting, react" data-time="noite" data-plat="twitch">
+            <img class="item-img" src="./img/imagem teste.png" alt="">
+            <h3>Item 4</h3>
+            <p><span>Tags:</span> Asmr, Just Chatting, Gameplay</p>
+            <p><span>Horário:</span> Noite</p>
+            <p><span>Plataforma:</span> Twitch</p>
+        </div>
+        
+        <div class="item" data-tags="asmr, gameplay, just-chatting, react" data-time="noite" data-plat="twitch">
+            <img class="item-img" src="./img/imagem teste.png" alt="">
+            <h3>Item 4</h3>
+            <p><span>Tags:</span> Asmr, Just Chatting, Gameplay</p>
+            <p><span>Horário:</span> Noite</p>
+            <p><span>Plataforma:</span> Twitch</p>
+        </div>
+        
+        <div class="item" data-tags="asmr, gameplay, just-chatting, react" data-time="noite" data-plat="twitch">
+            <img class="item-img" src="./img/imagem teste.png" alt="">
+            <h3>Item 4</h3>
+            <p><span>Tags:</span> Asmr, Just Chatting, Gameplay</p>
+            <p><span>Horário:</span> Noite</p>
+            <p><span>Plataforma:</span> Twitch</p>
+        </div>
+        
+        <div class="item" data-tags="asmr, gameplay, just-chatting, react" data-time="noite" data-plat="twitch">
+            <img class="item-img" src="./img/imagem teste.png" alt="">
+            <h3>Item 4</h3>
+            <p><span>Tags:</span> Asmr, Just Chatting, Gameplay</p>
+            <p><span>Horário:</span> Noite</p>
+            <p><span>Plataforma:</span> Twitch</p>
+        </div>
+        
+        <div class="item" data-tags="asmr, gameplay, just-chatting, react" data-time="noite" data-plat="twitch">
+            <img class="item-img" src="./img/imagem teste.png" alt="">
+            <h3>Item 4</h3>
+            <p><span>Tags:</span> Asmr, Just Chatting, Gameplay</p>
+            <p><span>Horário:</span> Noite</p>
+            <p><span>Plataforma:</span> Twitch</p>
+        </div>
+        
+        <div class="item" data-tags="asmr, gameplay, just-chatting, react" data-time="noite" data-plat="twitch">
+            <img class="item-img" src="./img/imagem teste.png" alt="">
+            <h3>Item 4</h3>
+            <p><span>Tags:</span> Asmr, Just Chatting, Gameplay</p>
+            <p><span>Horário:</span> Noite</p>
+            <p><span>Plataforma:</span> Twitch</p>
+        </div>
+        
+        <div class="item" data-tags="asmr, gameplay, just-chatting, react" data-time="noite" data-plat="twitch">
+            <img class="item-img" src="./img/imagem teste.png" alt="">
+            <h3>Item 4</h3>
+            <p><span>Tags:</span> Asmr, Just Chatting, Gameplay</p>
+            <p><span>Horário:</span> Noite</p>
+            <p><span>Plataforma:</span> Twitch</p>
+        </div>
+        
+    </div>
+    </section>
+    
+    <footer>
+        <p>
+            Copyright &copy; 2025 by &lt;Gilvan Pedro&gt;. All rights reserved.
+        </p>
+    </footer>
+</body>
+<script src="./script.js"></script>
+</html>
