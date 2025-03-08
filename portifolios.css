@@ -7,6 +7,7 @@
     --bg-color-01: #1f242d;
     --bg-color-02: #323946;
     --color-00: #0000001a;
+    --nyhcolor: #00ffff;
 }
 
 *{
@@ -25,7 +26,7 @@ html {
   }
 
 body{
-    background-color: var(--bg-color-01);
+    background-color: var(--bg-color-02);
     color: var(--text-color);
 }
 
@@ -104,94 +105,86 @@ header{
 }
 
 section{
-    min-height: 100vh;
-    padding: 6rem 6rem 2rem;
+    padding: 6rem;
     padding-bottom: 0;
 }
 
-h1{
-    font-size: 4rem;
-    text-align: center;
-}
-
-.home-content{
-    display: inline-block;
+.info-bio{
     display: flex;
+    flex-direction: row;
+    margin: 30px;
+    justify-content: center;
     align-items: center;
 }
 
-.home-content p{
-    padding: 50px;
-}
-
-.home-img{
-    padding: 20px;
-    width: 500px;
-}
-
-.vtubers-novos{
-    background-color: var(--bg-color-02);
-    margin: 40px;
-    border-radius: 30px;
-}
-
-.vtubers-img{
-    align-items: center;
-    text-align: center;
-}
-
-.vtubers-img img{
-    padding: 10px;
-    width: 350px;
-}
-
-.formularios{
-    margin: 40px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    background-color: var(--bg-color-02);
-    border-radius: 30px;
+.info-box{
     flex-direction: column;
     justify-content: center;
-    
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.formularios h1{
-    padding-bottom: 40px;
+section h1{
+    text-align: center;
+    font-size: 50px;
+    color: cadetblue;
+}
+
+.info-box p{
+    padding: 5px;
+    font-size: 15px;
+}
+
+.info-box .span1{
+    color: var(--nyhcolor);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info-box .span2{
+    font-weight: bold;
     text-decoration: underline;
 }
 
-.formulario-sair, .formulario-entrar{
-    padding: 20px;
+section img{
+    width: 500px;
+    margin: 0;
+    padding: 0;
 }
 
-.botao a{
-    font-size: 1.3rem;
-}
-
-.botao{
-    padding: 30px;
+.social-content{
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.btn{
     padding: 10px;
-    background-color: var(--main-color1);
-    border-radius: 2rem;
-    color: rgb(0, 0, 0);
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-    transition: 0.3s ease;
-    margin-top: 1.2rem;
 }
 
-.btn:hover{
-    box-shadow: 0 0 0.3rem var(--main-color1);
-    background-color: inherit;
+.social-content a{
     color: var(--text-color);
-    cursor: pointer;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 50px;
+    border: solid 1px var(--nyhcolor);
+    font-size: 20px;
+    transition: ease 0.3s;
+    background-color: var(--bg-color-01);
+}
+
+.social-content a:hover{
+    color: var(--nyhcolor);
+    background-color: var(--bg-color-02);
+    border: solid 1px var(--text-color);
+}
+
+.clip{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.clip iframe{
+    width: 854px;
+    height: 480px;
 }
 
 footer{
@@ -201,85 +194,4 @@ footer{
     align-items: center;
     padding: 1.2rem;
     background-color: var(--bg-color-01);
-}
-
-.entrar-form, .sair-form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.cor-fundo{
-    background-color: var(--bg-color-02);
-}
-
-label{
-    font-size: 18px;
-}
-
-select{
-    margin-left: 5px;
-    margin-right: 15px;
-}
-
-select, button {
-    padding: 5px;
-    font-size: 19px;
-    border-radius: 5px;
-}
-
-button {
-    cursor: pointer;
-}
-
-form{
-    padding: 20px 0 10px 60px;
-}
-
-form .filter-form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 30px;
-    padding-left: 0;
-    justify-content: center;
-}
-
-.item {
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 250px;
-    box-sizing: border-box;
-    align-items: center;
-    text-align: center;
-    background-color: var(--bg-color-01);
-    box-shadow: 0  0 5px rgba(255, 255, 0, 0.479);
-    border-radius: 10px;
-}
-
-.item-img{
-    width: 150px;
-}
-
-.item h3 {
-    font-size: 25px;
-    color: var(--main-color1);
-}
-
-.item span{
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.item p {
-    font-size: 14px;
-    
 }
