@@ -148,7 +148,7 @@ h1{
 }
 
 .formularios{
-    margin: 40px;
+    margin: 60px;
     padding-bottom: 0;
     margin-bottom: 0;
     background-color: var(--bg-color-02);
@@ -246,22 +246,34 @@ form .filter-form{
     text-align: center;
 }
 
-.items {
+.items{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     padding: 30px;
-    padding-left: 0;
     justify-content: center;
 }
+.items a{
+    color: var(--text-color);
+    text-decoration: none;
+}
 
-.item {
+.items a:visited{
+    color: var(--text-color);
+}
+
+.items a:active{
+    color: var(--text-color);
+}
+
+.item{
     border: 1px solid #ccc;
     padding: 10px;
     width: 250px;
     box-sizing: border-box;
     align-items: center;
     text-align: center;
+    justify-content: center;
     background-color: var(--bg-color-01);
     box-shadow: 0  0 5px rgba(255, 255, 0, 0.479);
     border-radius: 10px;
@@ -283,5 +295,4 @@ form .filter-form{
 
 .item p {
     font-size: 14px;
-    
 }
