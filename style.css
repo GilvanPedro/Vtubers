@@ -163,8 +163,19 @@ h1{
     text-decoration: underline;
 }
 
-.formulario-sair, .formulario-entrar{
-    padding: 20px;
+.entrar-form{
+    padding: 10px;
+    margin: 30px;
+}
+
+.entrar-form iframe{
+    width: 640px;
+    height: 955px;
+}
+
+.sair-form iframe{
+    width: 640px;
+    height: 725px;
 }
 
 .botao a{
@@ -209,6 +220,13 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.sair-form{
+    height: 94vh;
+}
+
+.entrar-form{
     height: 100vh;
 }
 
@@ -277,6 +295,10 @@ form .filter-form{
     background-color: var(--bg-color-01);
     box-shadow: 0  0 5px rgba(255, 255, 0, 0.479);
     border-radius: 10px;
+}
+
+.item div{
+    cursor: pointer;
 }
 
 .item-img{
