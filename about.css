@@ -6,7 +6,10 @@
 }
 
 body{
-    background-color: #323946;
+    background-color: var(--bg-color-02);}
+
+.section{
+    min-height: 0;
 }
 
 .about-box{
@@ -51,4 +54,13 @@ body{
     color: var(--main-color1);
     background-color: var(--bg-color-02);
     border: solid 1px var(--text-color);
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    bottom: 0;
 }
