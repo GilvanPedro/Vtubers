@@ -47,4 +47,3 @@ document.getElementById('filter-form').addEventListener('submit', function(event
         }
     });
 });
-

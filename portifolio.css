@@ -146,8 +146,8 @@ section{
     text-decoration: underline;
 }
 
-section img{
-    width: 500px;
+.info-bio img{
+    width: 100%;
     margin: 0;
     padding: 0;
 }
